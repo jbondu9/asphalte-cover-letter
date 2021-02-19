@@ -16,7 +16,9 @@
   export default {
 
     created() {
-      window.addEventListener("resize", this.handleDrawer)
+      if (process.client) {
+        window.addEventListener("resize", this.handleDrawer)
+      }
     },
 
     destroyed() {
