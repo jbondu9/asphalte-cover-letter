@@ -30,7 +30,7 @@
 
 <style scoped>
   .slide-right-enter-active {
-    animation: slideRightIn 2s;
+    animation: slideRightIn .4s;
   }
 
   .slide-right-leave-active {
@@ -40,7 +40,7 @@
     right: 0;
     bottom: 0;
     width: 100%;
-    animation: slideRightOut 2s;
+    animation: slideRightOut .4s;
   }
 
   @keyframes slideRightIn {
@@ -54,7 +54,7 @@
   }
 
   .slide-left-enter-active {
-    animation: slideLeftIn 2s;
+    animation: slideLeftIn .4s;
   }
 
   .slide-left-leave-active {
@@ -64,7 +64,7 @@
     right: 0;
     bottom: 0;
     width: 100%;
-    animation: slideLeftOut 2s;
+    animation: slideLeftOut .4s;
   }
 
   @keyframes slideLeftIn {
