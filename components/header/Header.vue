@@ -9,11 +9,11 @@
 
     <div class="brand-logo">
       <nuxt-link to="/">
-        Jimmy
+        <Logo />
       </nuxt-link>
     </div>
 
-    <div class="trolley"></div>
+    <div class="star"></div>
 
     <div class="site-links">
       <SiteLinks />
@@ -23,10 +23,11 @@
 </template>
 
 <script>
-  import SiteLinks from "~/components/SiteLinks"
+  import SiteLinks from "~/components/header/SiteLinks"
+  import Logo from "~/components/header/Logo"
 
   export default {
-    components: { SiteLinks }
+    components: { SiteLinks, Logo }
   }
 </script>
 
@@ -34,12 +35,9 @@
   .header {
     display: grid;
     grid-template: 67px / auto 1fr auto;
+    justify-items: center;
     align-items: center;
     background-color: #fff;
-  }
-
-  .site-links {
-    justify-self: start;
   }
 
   .drawer-toggle {
@@ -61,6 +59,23 @@
     border-radius: 25px;
   }
 
+  .star {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40%;
+    margin-right: 15px;
+    background: center / contain no-repeat url("~assets/img/star-empty.svg");
+    cursor: pointer;
+    order: 3;
+  }
+
+  .star.active {
+    background: center / contain no-repeat url("~assets/img/star-fill.svg");
+  }
+
   .site-links {
     display: none;
   }
@@ -75,8 +90,13 @@
       display: none;
     }
     
+    .brand-logo {
+      order: 1;
+    }
+
     .site-links {
       display: block;
+      order: 2;
     }
   }
 </style>

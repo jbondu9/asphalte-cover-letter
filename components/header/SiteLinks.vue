@@ -12,7 +12,7 @@
   }
 
   .nav-item > a {
-    font-family: "Qanelas", sans-serif;
+    font-family: "Qanelas-Bold", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
   }

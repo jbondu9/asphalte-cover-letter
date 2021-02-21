@@ -1,7 +1,6 @@
 export default {
   head: {
-    title: "Candidature pour Asphalte",
-    titleTemplate: "%s | Jimmy Bondu",
+    title: "La Candidature Spontanée",
     htmlAttrs: {
       lang: "fr",
       amp: true
@@ -9,8 +8,12 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1, maximum-scale=1" },
-      { hid: "description", name: "description", content: "Ma candidature pour Asphalte réalisée avec Nuxt.js" }
+      { hid: "description", name: "description", content: "Ma candidature spontanée pour un poste de développeur front-end chez Asphalte" }
     ]
   },
-  components: true
+  components: [
+    {
+      path: "~/components/header/"
+    }
+  ]
 }

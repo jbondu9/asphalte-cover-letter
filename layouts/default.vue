@@ -61,7 +61,7 @@
   }
 
   @font-face {
-    font-family: "Qanelas";
+    font-family: "Qanelas-Bold";
     font-style: normal;
     font-weight: 700;
     font-display: swap;
@@ -77,7 +77,7 @@
   }
 
   @font-face {
-    font-family: "Roboto";
+    font-family: "Roboto-Bold";
     font-style: normal;
     font-weight: 700;
     font-display: swap;
@@ -125,5 +125,6 @@
     right: 0;
     left: 0;
     bottom: 0;
+    z-index: 1000;
   }
 </style>

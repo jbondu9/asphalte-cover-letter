@@ -15,7 +15,7 @@
 </template>
 
 <script>
-  import SiteLinks from "~/components/SiteLinks"
+  import SiteLinks from "~/components/header/SiteLinks"
 
   export default {
     components: { SiteLinks },
