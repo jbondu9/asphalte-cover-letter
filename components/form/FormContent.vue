@@ -6,9 +6,9 @@
       <span>{{ media }}</span>
     </div>
     <div class="media-list">
-      <div class="media-option mail" role="button" @click="setMedia('Mail')" :class="{active: media === 'Mail'}"></div>
-      <div class="media-option linkedin" role="button" @click="setMedia('LinkedIn')" :class="{active: media === 'LinkedIn'}"></div>
-      <div v-if="mobile" class="media-option phone" role="button" @click="setMedia('Téléphone')" :class="{active: media === 'Téléphone'}"></div>
+      <div class="media-option mail" role="button" @click="setMedia('Mail'), $emit('getFormData', media, object)" :class="{active: media === 'Mail'}"></div>
+      <div class="media-option linkedin" role="button" @click="setMedia('LinkedIn'), $emit('getFormData', media, object)" :class="{active: media === 'LinkedIn'}"></div>
+      <div v-if="mobile" class="media-option phone" role="button" @click="setMedia('Téléphone'), $emit('getFormData', media, object)" :class="{active: media === 'Téléphone'}"></div>
     </div>
     <div class="mail-object" v-if="media === 'Mail'">
       <div class="object">
@@ -22,13 +22,13 @@
         </div>
       </div>
       <div class="object-list">
-        <div class="object-option" role="button" @click="setObject('S')" :class="{active: object === 'S'}">
+        <div class="object-option" role="button" @click="setObject('S'), $emit('getFormData', media, object)" :class="{active: object === 'S'}">
           <span>S</span>
         </div>
-        <div class="object-option" role="button" @click="setObject('M')" :class="{active: object === 'M'}">
+        <div class="object-option" role="button" @click="setObject('M'), $emit('getFormData', media, object)" :class="{active: object === 'M'}">
           <span>M</span>
         </div>
-        <div class="object-option" role="button" @click="setObject('L')" :class="{active: object === 'L'}">
+        <div class="object-option" role="button" @click="setObject('L'), $emit('getFormData', media, object)" :class="{active: object === 'L'}">
           <span>L</span>
         </div>
       </div>
@@ -41,19 +41,13 @@
     data() {
       return {
         media: "Mail",
-        mobile: null,
-        object: "S",
+        object: "S"
       }
     },
 
-    mounted() {
-      if (/Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        this.mobile = true
-      }
-      else {
-        this.mobile = false
-      }
-    },
+    props: [
+      "mobile"
+    ],
 
     methods: {
       setMedia(media) {

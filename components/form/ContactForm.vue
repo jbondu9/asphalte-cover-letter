@@ -1,7 +1,7 @@
 <template>
-  <form class="contact-form" action="">
-    <FormHeader :availabilityDate="availabilityDate" :present-date="presentDate" />
-    <FormContent />
+  <form class="contact-form" @submit="adaptAction" :action="action" :target="target" method="post">
+    <FormHeader :availabilityDate="availabilityDate" :presentDate="presentDate" />
+    <FormContent @getFormData="getFormData" :mobile="mobile" />
     <button type="submit" class="form-btn">
       <span>Contacter</span>
     </button>
@@ -20,7 +20,12 @@
     data() {
       return {
         availabilityDate: new Date(2021, 3, 5),
-        presentDate: new Date()
+        presentDate: new Date(),
+        media: "Mail",
+        mobile: null,
+        object: "S",
+        action: "/contact",
+        target: "_self"
       }
     },
 
@@ -28,9 +33,42 @@
       this.updatePresentDate()
     },
 
+    mounted() {
+      if (/Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        this.mobile = true
+      }
+      else {
+        this.mobile = false
+      }
+    },
+
     methods: {
       updatePresentDate() {
         this.presentDate = new Date()
+      },
+
+      getFormData(media, object) {
+        this.media = media
+        this.object = object
+      },
+
+      adaptAction(e) {
+        switch (this.media) {
+          case "Mail":
+            this.action = "/contact"
+            this.target = "_self"
+            break
+          case "LinkedIn":
+            this.action = "https://www.linkedin.com/in/jbondu"
+            this.target = "_blank"
+            break
+          case "Téléphone":
+            this.action = "tel:+33767370346"
+            this.target = "_self"
+            break
+          default:
+            e.preventDefault()
+        }
       }
     }
   }
