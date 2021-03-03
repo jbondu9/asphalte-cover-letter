@@ -13,7 +13,9 @@
       </nuxt-link>
     </div>
 
-    <div class="star"></div>
+    <div class="github">
+      <a href="https://github.com/jbondu9/asphalte-cover-letter" target="_blank" rel="noreferrer"></a>
+    </div>
 
     <div class="site-links">
       <SiteLinks />
@@ -59,21 +61,23 @@
     border-radius: 25px;
   }
 
-  .star {
+  .github {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 40px;
-    height: 40%;
+    height: 50%;
     margin-right: 15px;
-    background: center / contain no-repeat url("~assets/img/star-empty.svg");
+    background: center / contain no-repeat url("~assets/icons/github.svg");
     cursor: pointer;
     order: 3;
   }
 
-  .star.active {
-    background: center / contain no-repeat url("~assets/img/star-fill.svg");
+  .github > a {
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 
   .site-links {

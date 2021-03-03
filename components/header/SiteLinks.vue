@@ -12,6 +12,7 @@
   }
 
   .nav-item > a {
+    position: relative;
     font-family: "Qanelas-Bold", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -41,8 +42,25 @@
     }
 
     .nav-item > a {
-      padding: 0;
+      padding: 3px 0;
       font-size: 13px;
+    }
+
+    .nav-item > a::before {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      height: 2px;
+      width: 70%;
+      background-color: #000;
+      transform: translateX(-51%);
+      opacity: 0;
+      transition: opacity .25s;
+    }
+
+    .nav-item:hover > a::before {
+      opacity: 1;
     }
   }
 </style>

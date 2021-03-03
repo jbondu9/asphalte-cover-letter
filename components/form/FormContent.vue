@@ -95,16 +95,16 @@
   }
 
   .media-option.mail {
-    background: center / 60% no-repeat url("~assets/img/mail.svg"),
+    background: center / 60% no-repeat url("~assets/icons/mail.svg"),
                 linear-gradient(rgb(0, 102, 255), rgb(0, 200, 255));
   }
 
   .media-option.linkedin {
-    background: center / 90% no-repeat url("~assets/img/linkedin.svg");
+    background: center / 90% no-repeat url("~assets/icons/linkedin.svg");
   }
 
   .media-option.phone {
-    background: center / 60% no-repeat url("~assets/img/call.svg"),
+    background: center / 60% no-repeat url("~assets/icons/call.svg"),
                 linear-gradient(rgb(150, 255, 79), rgb(48, 212, 15));
   }
 

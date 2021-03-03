@@ -3,7 +3,7 @@
     <slot></slot>
     <div class="carousel-nav carousel-next" role="button" title="suivant" @click="next"></div>
     <div class="carousel-nav carousel-prev" role="button" title="précédent" @click="prev"></div>
-    <div class="carousel-pagination">
+    <div v-if="pagination" class="carousel-pagination">
       <button class="carousel-button" v-for="n in slidesCount" :key="n" @click="goto(n-1)" :class="{active: n - 1 === index }"></button>
     </div>
   </div>
@@ -18,6 +18,10 @@
         direction: null
       }
     },
+
+    props: [
+      "pagination"
+    ],
 
     mounted() {
       this.slides = this.$children
@@ -72,7 +76,7 @@
     left: 10px;
     width: 26px;
     height: 26px;
-    background-image: url("~assets/img/left-arrow.svg");
+    background-image: url("~assets/icons/left-arrow.svg");
     transform: translateY(-50%);
     opacity: .4;
     transition: opacity .25s;
@@ -86,7 +90,7 @@
   .carousel-nav.carousel-next {
     right: 10px;
     left: auto;
-    background-image: url("~assets/img/right-arrow.svg");
+    background-image: url("~assets/icons/right-arrow.svg");
   }
 
   .carousel-pagination {

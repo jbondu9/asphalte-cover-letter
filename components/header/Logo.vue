@@ -26,7 +26,7 @@
     font-weight: 800;
     text-transform: uppercase;
     color: transparent;
-    background-image: url("~assets/img/concrete.jpg");
+    background-image: url("~assets/textures/concrete.jpg");
     background-size: contain;
     background-clip: text;
     -webkit-background-clip: text;

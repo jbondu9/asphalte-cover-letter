@@ -1,5 +1,5 @@
 <template>
-  <form class="contact-form" @submit="adaptAction" :action="action" :target="target" method="post">
+  <form class="contact-form" @submit="adaptAction" :action="action" :target="target">
     <FormHeader :availabilityDate="availabilityDate" :presentDate="presentDate" />
     <FormContent @getFormData="getFormData" :mobile="mobile" />
     <button type="submit" class="form-btn">
@@ -50,6 +50,7 @@
       getFormData(media, object) {
         this.media = media
         this.object = object
+        this.$emit('changeCarousel', media)
       },
 
       adaptAction(e) {
