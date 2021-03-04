@@ -97,7 +97,7 @@
     line-height: 1.6;
 
     color: #000;
-    background-color: #fff;
+    background-color: #e4e9ec;
   }
 
   a {

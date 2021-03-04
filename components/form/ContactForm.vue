@@ -1,5 +1,5 @@
 <template>
-  <form class="contact-form" @submit="adaptAction" :action="action" :target="target">
+  <form class="contact-form" @submit="adaptAction" :action="action" :method="method" :target="target">
     <FormHeader :availabilityDate="availabilityDate" :presentDate="presentDate" />
     <FormContent @getFormData="getFormData" :mobile="mobile" />
     <button type="submit" class="form-btn">
@@ -23,8 +23,9 @@
         presentDate: new Date(),
         media: "Mail",
         mobile: null,
-        object: "S",
-        action: "/contact",
+        subject: "S",
+        action: `mailto:jimmy.bondu@zoho.com?subject=${this.transformSubject(this.subject)}`,
+        method: "POST",
         target: "_self"
       }
     },
@@ -47,24 +48,40 @@
         this.presentDate = new Date()
       },
 
-      getFormData(media, object) {
+      getFormData(media, subject) {
         this.media = media
-        this.object = object
+        this.subject = subject
         this.$emit('changeCarousel', media)
+      },
+
+      transformSubject(subject) {
+        switch (subject) {
+          case "S":
+            return "Il y a de l'idée, disponible pour un appel ?"
+          case "M":
+            return "On pourrait peut-être se laisser tenter, dites nous en plus"
+          case "L":
+            return "On commence quand ?"
+          default:
+            return ""
+        }
       },
 
       adaptAction(e) {
         switch (this.media) {
           case "Mail":
-            this.action = "/contact"
+            this.action = `mailto:jimmy.bondu@zoho.com?subject=${this.transformSubject(this.subject)}`
+            this.method = "POST"
             this.target = "_self"
             break
           case "LinkedIn":
             this.action = "https://www.linkedin.com/in/jbondu"
+            this.method = ""
             this.target = "_blank"
             break
           case "Téléphone":
             this.action = "tel:+33767370346"
+            this.method = ""
             this.target = "_self"
             break
           default:
@@ -77,6 +94,8 @@
 
 <style scoped>
   .contact-form {
+    max-width: 450px;
+    margin: 0 auto;
     padding: 16px 24px 30px 24px;
   }
 

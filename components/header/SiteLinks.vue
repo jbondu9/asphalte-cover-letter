@@ -44,6 +44,7 @@
     .nav-item > a {
       padding: 3px 0;
       font-size: 13px;
+      letter-spacing: 2px;
     }
 
     .nav-item > a::before {

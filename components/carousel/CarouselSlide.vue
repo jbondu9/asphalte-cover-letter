@@ -33,7 +33,7 @@
     animation: slideRightIn .4s;
   }
 
-  .slide-right-leave-active {
+  .slide-right-leave-to {
     position: absolute;
     top: 0;
     left: 0;
@@ -57,7 +57,7 @@
     animation: slideLeftIn .4s;
   }
 
-  .slide-left-leave-active {
+  .slide-left-leave-to {
     position: absolute;
     top: 0;
     left: 0;

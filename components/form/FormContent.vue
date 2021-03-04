@@ -6,29 +6,29 @@
       <span>{{ media }}</span>
     </div>
     <div class="media-list">
-      <div class="media-option mail" role="button" @click="setMedia('Mail'), $emit('getFormData', media, object)" :class="{active: media === 'Mail'}"></div>
-      <div class="media-option linkedin" role="button" @click="setMedia('LinkedIn'), $emit('getFormData', media, object)" :class="{active: media === 'LinkedIn'}"></div>
-      <div v-if="mobile" class="media-option phone" role="button" @click="setMedia('Téléphone'), $emit('getFormData', media, object)" :class="{active: media === 'Téléphone'}"></div>
+      <div class="media-option mail" role="button" @click="setMedia('Mail'), $emit('getFormData', media, subject)" :class="{active: media === 'Mail'}"></div>
+      <div class="media-option linkedin" role="button" @click="setMedia('LinkedIn'), $emit('getFormData', media, subject)" :class="{active: media === 'LinkedIn'}"></div>
+      <div v-if="mobile" class="media-option phone" role="button" @click="setMedia('Téléphone'), $emit('getFormData', media, subject)" :class="{active: media === 'Téléphone'}"></div>
     </div>
-    <div class="mail-object" v-if="media === 'Mail'">
-      <div class="object">
+    <div class="mail-subject" v-if="media === 'Mail'">
+      <div class="subject">
         <div>
           <span class="label">Objet</span>
           :
-          <span>{{ object }}</span>
+          <span>{{ subject }}</span>
         </div>
         <div>
           <span class="guide">Guide des objets</span>
         </div>
       </div>
-      <div class="object-list">
-        <div class="object-option" role="button" @click="setObject('S'), $emit('getFormData', media, object)" :class="{active: object === 'S'}">
+      <div class="subject-list">
+        <div class="subject-option" role="button" @click="setSubject('S'), $emit('getFormData', media, subject)" :class="{active: subject === 'S'}">
           <span>S</span>
         </div>
-        <div class="object-option" role="button" @click="setObject('M'), $emit('getFormData', media, object)" :class="{active: object === 'M'}">
+        <div class="subject-option" role="button" @click="setSubject('M'), $emit('getFormData', media, subject)" :class="{active: subject === 'M'}">
           <span>M</span>
         </div>
-        <div class="object-option" role="button" @click="setObject('L'), $emit('getFormData', media, object)" :class="{active: object === 'L'}">
+        <div class="subject-option" role="button" @click="setSubject('L'), $emit('getFormData', media, subject)" :class="{active: subject === 'L'}">
           <span>L</span>
         </div>
       </div>
@@ -41,7 +41,7 @@
     data() {
       return {
         media: "Mail",
-        object: "S"
+        subject: "S"
       }
     },
 
@@ -54,8 +54,8 @@
         this.media = media
       },
 
-      setObject(object) {
-        this.object = object
+      setSubject(subject) {
+        this.subject = subject
       }
     } 
   }
@@ -67,11 +67,11 @@
     font-family: "Qanelas";
   }
 
-  .media, .object {
+  .media, .subject {
     margin-bottom: 10px;
   }
 
-  .media-list, .object-list {
+  .media-list, .subject-list {
     display: flex;
   }
 
@@ -120,7 +120,7 @@
     border: 2px solid #fff;
   }
 
-  .object {
+  .subject {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -135,11 +135,11 @@
     text-decoration: underline;
   }
 
-  .object-list {
+  .subject-list {
     margin-bottom: 16px;
   }
 
-  .object-option {
+  .subject-option {
     position: relative;
     width: 50px;
     height: 50px;
@@ -149,13 +149,13 @@
     transition: all .25s;
   }
 
-  .object-option.active {
+  .subject-option.active {
     font-family: "Qanelas-Bold";
     font-weight: 700;
     border: 2px solid #000;
   }
 
-  .object-option > span {
+  .subject-option > span {
     display: block;
     position: absolute;
     top: 50%;

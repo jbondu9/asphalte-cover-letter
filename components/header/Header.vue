@@ -86,8 +86,8 @@
 
   @media only screen and (min-width: 768px) {
     .header {
-      max-width: 1150px;
-      margin: 0 auto;
+      padding-left: calc(50% - 1150px / 2);
+      padding-right: calc(50% - 1150px / 2);
     }
 
     .drawer-toggle {

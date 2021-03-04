@@ -38,14 +38,14 @@
     background-color: #fff;
   }
 
-  @media only screen and (min-width: 892px) {
+  @media only screen and (min-width: 1000px) {
     .presentation-form {
       position: absolute;
       top: 50%;
-      right: 90px;
-      width: 355px;
+      right: 95px;
+      width: 340px;
       transform: translateY(-50%);
-      box-shadow: inset 0 0 2px rgba(129, 129, 129, .4);
+      box-shadow: inset 0 0 1px 1px rgba(190, 190, 190, .3);
     }
   }
 </style>

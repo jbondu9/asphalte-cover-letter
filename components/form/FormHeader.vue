@@ -1,13 +1,11 @@
 <template>
   <div class="form-header">
-    <div class="short-bio">
-      <h1 class="name">La candidatue spontanée</h1>
-      <ul class="contact-info">
-        <li>Identité : Jimmy Bondu</li>
-        <li>Poste visé : Développeur front-end</li>
-        <li>Niveau : Junior</li>
-      </ul>
-    </div>
+    <h1 class="name">La candidature spontanée</h1>
+    <ul class="contact-info">
+      <li>Identité : Jimmy Bondu</li>
+      <li>Poste visé : Développeur front-end</li>
+      <li>Niveau : Junior</li>
+    </ul>
     <div class="quick-availability">
       <div class="availability" :class="{inactive: !isInactive()}">
         <div class="availability-moment">Disponible à partir</div>
@@ -46,13 +44,9 @@
 
 <style scoped>
   .form-header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 60% auto;
     width: 100%;
-  }
-
-  .short-bio {
-    max-width: 60%;
   }
 
   .name {
@@ -63,11 +57,15 @@
     font-weight: 700;
     line-height: 1.2em;
     text-transform: capitalize;
+    grid-column: 1;
+    grid-row: 1;
   }
 
   .contact-info {
     margin: 18px 0 22px 0;
     padding: 0 0 0 18px;
+    grid-column: 1;
+    grid-row: 2/3;
   }
 
   .contact-info > li {
@@ -81,6 +79,8 @@
     display: flex;
     flex-flow: column;
     padding-top: 4px;
+    grid-column: 2;
+    grid-row: 1/3;
   }
 
   .availability {
@@ -118,5 +118,33 @@
     height: 1px;
     transform: translate(-2px, -50%);
     background-color: #192631;
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .form-header {
+      display: flex;
+      flex-flow: column;
+      align-items: stretch;
+    }
+
+    .name {
+      margin-bottom: 12px;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .contact-info {
+      order: 3;
+    }
+
+    .quick-availability {
+      flex-flow: row;
+      justify-content: space-around;
+      order: 2;
+    }
+
+    .availability {
+      text-align: center;
+    }
   }
 </style>
