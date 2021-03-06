@@ -1,6 +1,5 @@
 <template>
   <section class="issues-section">
-    <h2 class="issues-title">Rock - Cover - Letter</h2>
     <p class="issues-intro">
       Quand on s’attaque au marché de l’emploi, il y a deux choses sur lesquelles on est quasi sûr de plancher : son CV et sa lettre de motivation. Alors afin de ne pas retomber dans de vieux travers, je me suis repenché sur d’anciennes candidatures, tout en prenant note de différents retours.
       <span>Et voici les quatre grands points que j’en ai tirés :</span>
@@ -51,15 +50,6 @@
     text-align: center;
   }
 
-  .issues-title {
-    margin: 0;
-    padding: 24px 0 14px;
-    font-family: "Qanelas-Bold", sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 1.4;
-  }
-
   .issues-intro {
     margin: 0 15px;
     padding: 0 0 14px;
@@ -73,6 +63,8 @@
   }
 
   .issues-items {
+    display: flex;
+    align-items: center;
     min-height: 350px;
     margin-top: 30px;
     background: center url("~assets/images/issues.jpg");
@@ -82,7 +74,7 @@
   .issues-container {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: baseline;
   }
 
   .item {
@@ -104,8 +96,13 @@
   }
 
   @media only screen and (min-width: 768px) {
-    .issues-container {
-      align-items: baseline;
+    .issues-section {
+      margin: 30px 12.5px 0;
+    }
+
+    .issues-intro {
+      max-width: 760px;
+      margin: 0 auto;
     }
 
     .item {
@@ -120,6 +117,13 @@
     .item-text {
       padding: 10px 0;
       font-size: 20px;
+    }
+  }
+
+  @media only screen and (min-width: 1125px) {
+    .issues-section {
+      max-width: 1100px;
+      margin: 30px auto 0;
     }
   }
 </style>
