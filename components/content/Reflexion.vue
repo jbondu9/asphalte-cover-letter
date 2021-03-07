@@ -8,9 +8,9 @@
       <div class="reflexion-content">
         <Box>
           <BoxTitle>Attiré au premier coup d'œil</BoxTitle>
-          <BonxContent>
+          <BoxContent>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id mollis nulla, id ultricies turpis. Mauris ac felis at ligula congue vestibulum.
-          </BonxContent>
+          </BoxContent>
         </Box>
       </div>
     </div>
@@ -22,9 +22,9 @@
       <div class="reflexion-content">
         <Box>
           <BoxTitle>De bon profil</BoxTitle>
-          <BonxContent>
+          <BoxContent>
             Nunc eget condimentum sem. Sed tincidunt nunc eu massa laoreet laoreet a vel nisi. Nunc ultrices, sapien quis scelerisque accumsan, sem nunc interdum odio, rhoncus commodo massa quam in ipsum.
-          </BonxContent>
+          </BoxContent>
         </Box>
       </div>
     </div>
@@ -46,15 +46,22 @@
     margin: 30px 10px 0;
   }
 
-  .reflexion-box:not(:first-of-type) {
+  .reflexion-box:last-of-type {
     margin-top: 10px;
   }
 
   .reflexion-img {
     max-width: 530px;
-    max-height: 615px;
     margin: 0 auto;
     overflow: hidden;
+  }
+
+  .reflexion-box:first-of-type > .reflexion-img {
+    max-height: 615px;
+  }
+
+  .reflexion-box:last-of-type > .reflexion-img {
+    max-height: 570px;
   }
 
   .reflexion-img > img {
@@ -64,8 +71,15 @@
   }
 
   .reflexion-content {
-    max-width: 530px;
     margin: 0 auto;
+  }
+
+  .reflexion-box:first-of-type > .reflexion-content {
+    max-width: 610px;
+  }
+
+  .reflexion-box:last-of-type > .reflexion-content {
+    max-width: 530px;
   }
 
   @media only screen and (min-width: 768px) {
@@ -76,32 +90,26 @@
 
     .reflexion-box {
       display: flex;
+      flex-flow: row-reverse;
       position: relative;
     }
 
-    .reflexion-box:first-of-type {
-      flex-flow: row-reverse;
-    }
-
-    .reflexion-box:not(:first-of-type) {
+    .reflexion-box:last-of-type {
+      flex-flow: row;
       margin-top: 0;
     }
 
     .reflexion-img {
-      width: 50%;
       margin: 0;
     }
 
-    .reflexion-box:not(:first-of-type) > .reflexion-img {
+    .reflexion-box:last-of-type > .reflexion-img {
       position: absolute;
       left: 0;
       bottom: 0;
-      width: 49%;
-      max-height: 570px;
     }
 
     .reflexion-content {
-      width: 55%;
       margin: 0;
     }
 
@@ -109,11 +117,9 @@
       position: absolute;
       left: 0;
       top: 40px;
-      max-width: 610px;
     }
 
-    .reflexion-box:not(:first-of-type) > .reflexion-content {
-      width: 50%;
+    .reflexion-box:last-of-type > .reflexion-content {
       margin-left: auto;
     }
   }
@@ -123,6 +129,28 @@
       max-width: 1100px;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    .reflexion-img {
+      width: 530px;
+    }
+
+    .reflexion-box:first-of-type > .reflexion-img {
+      height: 615px;
+    }
+
+    .reflexion-box:last-of-type > .reflexion-img {
+      height: 570px;
+    }
+
+    .reflexion-box:first-of-type > .reflexion-content {
+      width: 610px;
+      min-height: 250px;
+    }
+
+    .reflexion-box:last-of-type > .reflexion-content {
+      width: 530px;
+      min-height: 320px;
     }
   }
 </style>

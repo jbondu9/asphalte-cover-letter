@@ -107,6 +107,7 @@
 <style scoped>
   .presentation-carousel {
     width: 100%;
+    max-height: 800px;
   }
 
   .presentation-slide {
