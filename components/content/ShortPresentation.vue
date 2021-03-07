@@ -1,5 +1,5 @@
 <template>
-  <section class="presentation-section">
+  <section class="presentation-section" id="top">
     <PresentationCarousel :media="media" />
     <div class="presentation-form">
       <ContactForm @changeCarousel="changeCarousel" />

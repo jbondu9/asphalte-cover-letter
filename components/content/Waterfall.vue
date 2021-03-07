@@ -79,7 +79,7 @@
 
 <style scoped>
   .waterfall-section {
-    margin: 30px 10px 0;
+    margin: 22px 10px 0;
   }
 
   .waterfall-box:not(:first-of-type) {
@@ -87,28 +87,10 @@
   }
 
   .waterfall-img {
+    max-width: 530px;
+    max-height: 570px;
     margin: 0 auto;
     overflow: hidden;
-  }
-
-  .waterfall-box:first-of-type > .waterfall-img {
-    max-width: 465px;
-    max-height: 400px;
-  }
-
-  .waterfall-box:nth-of-type(2) > .waterfall-img {
-    max-width: 460px;
-    max-height: 800px;
-  }
-
-  .waterfall-box:nth-of-type(3) > .waterfall-img {
-    max-width: 530px;
-    max-height: 645px;
-  }
-
-  .waterfall-box:nth-of-type(4) > .waterfall-img {
-    max-width: 530px;
-    max-height: 615px;
   }
 
   .waterfall-img > img {
@@ -118,13 +100,20 @@
   }
 
   .waterfall-content {
+    max-width: 530px;
     margin: 0 auto;
   }
 
   @media only screen and (min-width: 768px) {
     .waterfall-section {
-      margin-left: 12.5px;
-      margin-right: 12.5px;
+      margin: 30px 12.5px 0;
+    }
+  }
+
+  @media only screen and (min-width: 1125px) {
+    .waterfall-section {
+      max-width: 1100px;
+      margin: 40px auto 0;
     }
 
     .waterfall-box {
@@ -153,39 +142,6 @@
       margin: 0;
     }
 
-    .waterfall-box:nth-of-type(3) > .waterfall-img {
-      margin-top: -60px;
-    }
-
-    .waterfall-content {
-      margin: 0;
-    }
-
-    .waterfall-box:nth-of-type(2) > .waterfall-content {
-      position: absolute;
-      top: 90px;
-      right: 0;
-    }
-
-    .waterfall-box:nth-of-type(2) > .waterfall-content:last-of-type {
-      bottom: 60px;
-      top: auto;
-    }
-
-    .waterfall-box:nth-of-type(4) > .waterfall-content {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-    }
-  }
-
-  @media only screen and (min-width: 1125px) {
-    .waterfall-section {
-      max-width: 1100px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
     .waterfall-box:first-of-type > .waterfall-img {
       width: 465px;
       height: 400px;
@@ -193,31 +149,41 @@
 
     .waterfall-box:nth-of-type(2) > .waterfall-img {
       width: 460px;
-      height: 800px;
+      min-height: 800px;
     }
 
     .waterfall-box:nth-of-type(3) > .waterfall-img {
       width: 530px;
-      height: 645px;
+      min-height: 645px;
+      margin-top: -60px;
     }
 
     .waterfall-box:nth-of-type(4) > .waterfall-img {
       width: 530px;
-      height: 615px;
+      min-height: 615px;
+    }
+
+    .waterfall-content {
+      margin: 0;
     }
 
     .waterfall-box:first-of-type > .waterfall-content {
-      width: 595px;
-      max-height: 300px;
+      min-width: 595px;
+      height: 300px;
     }
 
     .waterfall-box:nth-of-type(2) > .waterfall-content {
-      width: 595px;
+      position: absolute;
+      top: 90px;
+      right: 0;
+      min-width: 595px;
       height: 280px;
     }
 
     .waterfall-box:nth-of-type(2) > .waterfall-content:last-of-type {
-      width: 690px;
+      bottom: 60px;
+      top: auto;
+      min-width: 690px;
     }
 
     .waterfall-box:nth-of-type(3) > .waterfall-content {
@@ -226,8 +192,11 @@
     }
 
     .waterfall-box:nth-of-type(4) > .waterfall-content {
+      position: absolute;
+      bottom: 0;
+      right: 0;
       width: 530px;
-      height: 320px;
+      height: 375px;
     }
   }
 </style>

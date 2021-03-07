@@ -78,13 +78,13 @@
     height: 26px;
     background-image: url("~assets/icons/left-arrow.svg");
     transform: translateY(-50%);
-    opacity: .4;
+    opacity: .6;
     transition: opacity .25s;
     cursor: pointer;
   }
 
   .carousel-nav:hover {
-    opacity: .8;
+    opacity: 1;
   }
 
   .carousel-nav.carousel-next {

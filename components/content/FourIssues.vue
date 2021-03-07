@@ -123,7 +123,7 @@
   @media only screen and (min-width: 1125px) {
     .issues-section {
       max-width: 1100px;
-      margin: 30px auto 0;
+      margin: 40px auto 0;
     }
   }
 </style>

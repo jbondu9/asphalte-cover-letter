@@ -14,7 +14,7 @@
 
 <style scoped>
   .title {
-    margin: 30px 10px 0;
+    margin: 22px 10px 0;
   }
 
   .title > h2 {
@@ -28,8 +28,7 @@
 
   @media only screen and (min-width: 768px) {
     .title {
-      margin-left: 12.5px;
-      margin-right: 12.5px;
+      margin: 30px 12.5px 0;
     }
 
     .title > h2 {

@@ -1,27 +1,27 @@
 <template>
-  <section class="reflexion-section">
-    <div class="reflexion-box">
-      <div class="reflexion-img">
+  <section class="double-section">
+    <div class="double-box">
+      <div class="double-img">
         <!-- <img :src="require({{  }})"> -->
-        <img src="https://picsum.photos/id/684/355/427">
+        <img src="https://picsum.photos/id/221/355/427">
       </div>
-      <div class="reflexion-content">
+      <div class="double-content">
         <Box>
-          <BoxTitle>Attiré au premier coup d'œil</BoxTitle>
+          <BoxTitle>Classico</BoxTitle>
           <BoxContent>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id mollis nulla, id ultricies turpis. Mauris ac felis at ligula congue vestibulum.
           </BoxContent>
         </Box>
       </div>
     </div>
-    <div class="reflexion-box">
-      <div class="reflexion-img">
+    <div class="double-box">
+      <div class="double-img">
         <!-- <img :src="require({{  }})"> -->
-        <img src="https://picsum.photos/id/81/355/427">
+        <img src="https://picsum.photos/id/19/355/427">
       </div>
-      <div class="reflexion-content">
+      <div class="double-content">
         <Box>
-          <BoxTitle>De bon profil</BoxTitle>
+          <BoxTitle>Parcourir le monde et voir ce que la vie propose</BoxTitle>
           <BoxContent>
             Nunc eget condimentum sem. Sed tincidunt nunc eu massa laoreet laoreet a vel nisi. Nunc ultrices, sapien quis scelerisque accumsan, sem nunc interdum odio, rhoncus commodo massa quam in ipsum.
           </BoxContent>
@@ -42,86 +42,89 @@
 </script>
 
 <style scoped>
-  .reflexion-section {
+  .double-section {
     margin: 22px 10px 0;
   }
 
-  .reflexion-box:last-of-type {
+  .double-box:last-of-type {
     margin-top: 10px;
   }
 
-  .reflexion-img {
+  .double-img {
     max-width: 530px;
     max-height: 570px;
     margin: 0 auto;
     overflow: hidden;
   }
 
-  .reflexion-img > img {
+  .double-img > img {
     width: 100%;
     height: 100%;
     vertical-align: middle;
   }
 
-  .reflexion-content {
+  .double-content {
     max-width: 530px;
     margin: 0 auto;
   }
 
   @media only screen and (min-width: 768px) {
-    .reflexion-section {
+    .double-section {
       margin: 30px 12.5px 0;
     }
   }
 
   @media only screen and (min-width: 1125px) {
-    .reflexion-section {
+    .double-section {
       max-width: 1100px;
       margin: 40px auto 0;
     }
 
-    .reflexion-box {
+    .double-box {
       display: flex;
       flex-flow: row-reverse;
+      justify-content: space-between;
       position: relative;
     }
 
-    .reflexion-box:last-of-type {
+    .double-box:last-of-type {
       flex-flow: row;
-      margin-top: 0;
+      margin-top: -30px;
     }
 
-    .reflexion-img {
-      width: 530px;
+    .double-img {
       margin: 0;
     }
 
-    .reflexion-box:first-of-type > .reflexion-img {
-      min-height: 615px;
+    .double-box:first-of-type > .double-img {
+      width: 545px;
+      height: 400px;
     }
 
-    .reflexion-box:last-of-type > .reflexion-img {
+    .double-box:last-of-type > .double-img {
+      width: 520px;
+      height: 390px;
+    }
+
+    .double-content {
+      margin: 0;
+    }
+
+    .double-box:first-of-type > .double-content {
       position: absolute;
+      top: 0;
       left: 0;
+      min-width: 600px;
+      height: 280px;
+    }
+
+    .double-box:last-of-type > .double-content {
+      position: absolute;
       bottom: 0;
-      height: 570px;
-    }
-
-    .reflexion-content {
-      margin: 0;
-    }
-
-    .reflexion-box:first-of-type > .reflexion-content {
-      position: absolute;
-      left: 0;
-      top: 40px;
-      min-width: 610px;
-      min-height: 250px;
-    }
-
-    .reflexion-box:last-of-type > .reflexion-content {
+      right: 0;
+      top: auto;
       width: 530px;
-      height: 320px;
+      height: 280px;
       margin-left: auto;
     }
   }
