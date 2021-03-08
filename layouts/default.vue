@@ -7,6 +7,7 @@
       <div v-if="isDrawer" class="backdrop" @click="$store.dispatch('nav/toggleDrawer')"></div>
       <Header />
       <Nuxt />
+      <Footer />
     </div>
 
   </div>

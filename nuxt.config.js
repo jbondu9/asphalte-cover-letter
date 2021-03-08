@@ -14,6 +14,9 @@ export default {
   components: [
     {
       path: "~/components/header/"
+    },
+    {
+      path: "~/components/footer/"
     }
   ]
 }

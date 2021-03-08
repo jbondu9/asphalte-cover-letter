@@ -2,7 +2,6 @@
   <ul class="nav-list">
     <li class="nav-item"><nuxt-link to="/experience">Expérience</nuxt-link></li>
     <li class="nav-item"><nuxt-link to="/agenda">Bientôt disponible</nuxt-link></li>
-    <li class="nav-item"><nuxt-link to="/contact">Me contacter</nuxt-link></li>
   </ul>
 </template>
 
