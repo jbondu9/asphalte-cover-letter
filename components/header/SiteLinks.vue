@@ -1,9 +1,47 @@
 <template>
   <ul class="nav-list">
-    <li class="nav-item"><nuxt-link to="/experience">Expérience</nuxt-link></li>
-    <li class="nav-item"><nuxt-link to="/agenda">Bientôt disponible</nuxt-link></li>
+    <li class="nav-item"><nuxt-link to="/experiences">Expériences</nuxt-link></li>
+    <li class="nav-item">
+      <nuxt-link to="/available">
+        <span v-if="isAvailable()">
+          Disponible
+        </span>
+        <span v-else>
+          Bientôt disponible
+        </span>
+      </nuxt-link>
+    </li>
   </ul>
 </template>
+
+<script>
+  export default {
+    data() {
+      return {
+        availabilityDate: new Date(2021, 3, 5),
+        presentDate: new Date()
+      }
+    },
+
+    created() {
+      this.updatePresentDate()
+    },
+
+    mounted() {
+      this.isAvailable()
+    },
+
+    methods: {
+      isAvailable() {
+        return this.presentDate - this.availabilityDate >= 0
+      },
+
+      updatePresentDate() {
+        this.presentDate = new Date()
+      }
+    }
+  }
+</script>
 
 <style scoped>
   .nav-list {
@@ -56,7 +94,7 @@
       background-color: #000;
       transform: translateX(-51%);
       opacity: 0;
-      transition: opacity .25s;
+      transition: opacity .2s;
     }
 
     .nav-item:hover > a::before {

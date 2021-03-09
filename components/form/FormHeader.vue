@@ -2,9 +2,9 @@
   <div class="form-header">
     <h1 class="name">La candidature spontanée</h1>
     <ul class="contact-info">
-      <li>Identité : Jimmy Bondu</li>
-      <li>Poste visé : Développeur front-end</li>
-      <li>Niveau : Junior</li>
+      <li>Jimmy Bondu</li>
+      <li>Développeur front-end junior</li>
+      <li>Data enthousiaste</li>
     </ul>
     <div class="quick-availability">
       <div class="availability" :class="{inactive: !isInactive()}">

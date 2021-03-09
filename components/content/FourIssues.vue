@@ -1,7 +1,7 @@
 <template>
   <section class="issues-section">
     <p class="issues-intro">
-      Quand on s’attaque au marché de l’emploi, il y a deux choses sur lesquelles on est quasi sûr de plancher : son CV et sa lettre de motivation. Alors afin de ne pas retomber dans de vieux travers, je me suis repenché sur d’anciennes candidatures, tout en prenant note de différents retours.
+      Quand on s’attaque au marché de l’emploi, il y a deux choses sur lesquelles on est quasi sûr de plancher : son CV et sa lettre de motivation. Alors, afin de ne pas retomber dans de vieux travers et de vous proposer une bonne candidature spontannée, je me suis repenché sur d’anciennes candidatures tout en prenant note de différents retours.
       <span>Et voici les quatre grands points que j’en ai tirés :</span>
     </p>
     <div class="issues-items">

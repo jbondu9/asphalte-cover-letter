@@ -7,9 +7,9 @@
       </div>
       <div class="double-content">
         <Box>
-          <BoxTitle>Classico</BoxTitle>
+          <BoxTitle>Kōhai</BoxTitle>
           <BoxContent>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id mollis nulla, id ultricies turpis. Mauris ac felis at ligula congue vestibulum.
+            Ingénieur en Télécommunications de formation, je me forme au web depuis mon service civique en apprenant des meilleurs : Mathieu Nebra (Openclassrooms), Jonathan Boyer (Grafikart) et Benjamin Debon (Benjamin Code) sont mes senseis.
           </BoxContent>
         </Box>
       </div>
@@ -21,9 +21,9 @@
       </div>
       <div class="double-content">
         <Box>
-          <BoxTitle>Parcourir le monde et voir ce que la vie propose</BoxTitle>
+          <BoxTitle>Poutine au curry</BoxTitle>
           <BoxContent>
-            Nunc eget condimentum sem. Sed tincidunt nunc eu massa laoreet laoreet a vel nisi. Nunc ultrices, sapien quis scelerisque accumsan, sem nunc interdum odio, rhoncus commodo massa quam in ipsum.
+            Pour m'enrichir professionnellement et personnellement, j'ai aussi profité de mes années en école d'ingénieurs pour parcourir quelques kilomètres : de l'Inde au Canada en passant par l'Irlande, le choc des cultures fut épanouissant.
           </BoxContent>
         </Box>
       </div>
@@ -108,6 +108,7 @@
 
     .double-content {
       margin: 0;
+      min-height: 280px;
     }
 
     .double-box:first-of-type > .double-content {
@@ -115,7 +116,6 @@
       top: 0;
       left: 0;
       min-width: 600px;
-      height: 280px;
     }
 
     .double-box:last-of-type > .double-content {
@@ -124,7 +124,6 @@
       right: 0;
       top: auto;
       width: 530px;
-      height: 280px;
       margin-left: auto;
     }
   }

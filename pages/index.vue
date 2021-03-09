@@ -1,12 +1,18 @@
 <template>
   <div class="application-container">
     <ShortPresentation />
-    <Title title="Rock - Cover - Letter" />
+    <Title>
+      Rock - Cover - Letter
+    </Title>
     <FourIssues />
-    <Title title="La candidature revisitée" />
+    <Title>
+      La candidature revisitée
+    </Title>
     <Reflexion />
     <Waterfall />
-    <Title title="De la formation à la fabrication" />
+    <Title>
+      Côté formation
+    </Title>
     <Double />
     <Contact />
   </div>

@@ -9,7 +9,7 @@
         <Box>
           <BoxTitle>Pourquoi Asphalte</BoxTitle>
           <BoxContent>
-            Etiam vel vehicula lectus. Fusce et viverra sem. Duis quis felis elit. Aliquam eu venenatis turpis.
+            Bien que je passe rarement plus 15 minutes devant mes fringues à me demander comment je vais pouvoir les accorder, j'aime porter de beaux vêtements. Encore mieux quand ils sont confortables, bien coupés et qu'ils durent dans le temps. Et oui, étant quelque peu minimaliste et pas très grand, j'ai commencé, il y a peu, à vouloir consommer du vêtement autrement.
           </BoxContent>
         </Box>
       </div>
@@ -127,7 +127,7 @@
     }
 
     .waterfall-box:nth-of-type(2) {
-      margin-top: -50px;
+      margin-top: -20px;
     }
 
     .waterfall-box:nth-of-type(3) {
@@ -169,7 +169,7 @@
 
     .waterfall-box:first-of-type > .waterfall-content {
       min-width: 595px;
-      height: 300px;
+      height: 335px;
     }
 
     .waterfall-box:nth-of-type(2) > .waterfall-content {

@@ -7,9 +7,9 @@
       </div>
       <div class="reflexion-content">
         <Box>
-          <BoxTitle>Attiré au premier coup d'œil</BoxTitle>
+          <BoxTitle>All-in</BoxTitle>
           <BoxContent>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id mollis nulla, id ultricies turpis. Mauris ac felis at ligula congue vestibulum.
+            Pour commencer cette bonne candidature, j’ai voulu frapper fort d’entrée. Programmation sous Nuxt d’un web design que vous reconnaîtrez et phrasé qui je l’espère sera adapté, j’ai mis le paquet pour vous charmer.
           </BoxContent>
         </Box>
       </div>
@@ -23,7 +23,7 @@
         <Box>
           <BoxTitle>De bon profil</BoxTitle>
           <BoxContent>
-            Nunc eget condimentum sem. Sed tincidunt nunc eu massa laoreet laoreet a vel nisi. Nunc ultrices, sapien quis scelerisque accumsan, sem nunc interdum odio, rhoncus commodo massa quam in ipsum.
+            Moins de six pieds de haut et doté d'une teinture vénitienne 100% naturelle, je suis Jimmy, ingénieur en Télécommunications diplômé de l'ENSEIRB-MATMECA depuis novembre 2019.
           </BoxContent>
         </Box>
       </div>

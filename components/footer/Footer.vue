@@ -138,7 +138,7 @@
   }
 
   li > a:hover {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(255, 255, 255, .7);
   }
 
   .footer-logo {
