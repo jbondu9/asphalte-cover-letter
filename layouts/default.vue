@@ -29,6 +29,7 @@
     methods: {
       handleDrawer(e) {
         e.preventDefault()
+
         if (this.isDrawer && window.innerWidth >= 768) {
           this.$store.dispatch("nav/toggleDrawer")
         }
@@ -98,7 +99,7 @@
     line-height: 1.6;
 
     color: #000;
-    background-color: #efefef;
+    background-color: #f3f3f3;
   }
 
   a {

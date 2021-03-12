@@ -1,6 +1,6 @@
 <template>
   <div class="experiences-container">
-    <div class="experiences-search">
+    <div class="experiences-search" ref="searchBar">
       <input class="search-bar" type="text" v-model="search" placeholder="Vous cherchez une expérience ?">
     </div>
     <div class="experiences-section">
@@ -71,8 +71,23 @@
             date: "Juin 2017 - Août 2017",
             place: "Jaipur"
           }
-        ]
+        ],
+        top: 0
       }
+    },
+
+    created() {
+      if (process.client) {
+        window.addEventListener("scroll", this.handleSearchbar)
+      }
+    },
+
+    mounted() {
+      this.top = this.$refs.searchBar.getBoundingClientRect().top + window.pageYOffset
+    },
+
+    destroyed() {
+      window.removeEventListener("scroll", this.handleSearchbar)
     },
 
     computed: {
@@ -80,6 +95,19 @@
         return this.experiences.filter(experience => {
           return experience.title.toLowerCase().indexOf(this.search.toLowerCase()) > -1
         })
+      }
+    },
+
+    methods: {
+      handleSearchbar(e) {
+        e.preventDefault()
+
+        if (window.pageYOffset > this.top && !this.$refs.searchBar.classList.contains("fixed")) {
+          this.$refs.searchBar.classList.add("fixed")
+        }
+        else if (window.pageYOffset <= this.top && this.$refs.searchBar.classList.contains("fixed")) {
+          this.$refs.searchBar.classList.remove("fixed")
+        }
       }
     }
   }
@@ -115,10 +143,13 @@
 
   @media only screen and (min-width: 1081px) {
     .experiences-search {
+      position: relative;
       display: block;
       max-width: 1080px;
       margin: 30px auto 0;
       padding: 20px 0;
+      background-color: #f3f3f3;
+      z-index: 50;
     }
 
     .search-bar {
@@ -131,6 +162,13 @@
       background-position: 16px 50%;
       border: 1px solid #e4e9ec;
       outline: 0;
+    }
+
+    .fixed {
+      position: sticky;
+      position: -webkit-sticky;
+      padding: 20px 0;
+      top: 0;
     }
 
     .experiences-section {

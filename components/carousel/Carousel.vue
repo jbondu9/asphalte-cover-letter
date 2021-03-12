@@ -39,21 +39,25 @@
 
     methods: {
       next() {
-        this.index++
-        this.direction = "right"
-
-        if (this.index >= this.slidesCount) {
+        if (this.index < this.slidesCount - 1) {
+          this.index++
+        }
+        else {
           this.index = 0
         }
+
+        this.direction = "right"
       },
 
       prev() {
-        this.index--
-        this.direction = "left"
-
-        if (this.index < 0) {
+        if (this.index > 0) {
+          this.index--
+        }
+        else {
           this.index = this.slidesCount - 1
         }
+        
+        this.direction = "left"
       },
 
       goto(index) {
