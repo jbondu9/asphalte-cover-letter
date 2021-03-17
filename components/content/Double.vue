@@ -7,9 +7,9 @@
       </div>
       <div class="double-content">
         <Box>
-          <BoxTitle>Kōhai</BoxTitle>
+          <BoxTitle>Front-end flip</BoxTitle>
           <BoxContent>
-            Ingénieur en Télécommunications de formation, je me forme au web depuis mon service civique en apprenant des meilleurs : Mathieu Nebra (Openclassrooms), Jonathan Boyer (Grafikart) et Benjamin Debon (Benjamin Code) sont mes senseis.
+            Agile comme un félin grâce à mes nombreuses années de gymnastique, je profite de celles-ci pour apprendre de nouvelles technos comme si elles étaient des saltos. HTML, CSS, SASS, Javascript, React, Vue et Nuxt sont les cordes qui commencent à venir s'accrocher à mon arc.
           </BoxContent>
         </Box>
       </div>
@@ -23,7 +23,7 @@
         <Box>
           <BoxTitle>Poutine au curry</BoxTitle>
           <BoxContent>
-            Pour m'enrichir professionnellement et personnellement, j'ai aussi profité de mes années en école d'ingénieurs pour parcourir quelques kilomètres : de l'Inde au Canada en passant par l'Irlande, le choc des cultures fut épanouissant.
+            Enfin pour m'enrichir professionnellement et personnellement, j'ai profité de mes années en école d'ingénieurs pour parcourir quelques kilomètres : de l'Inde au Canada en passant par l'Irlande, ces voyages m'ont beaucoup apporté.
           </BoxContent>
         </Box>
       </div>
@@ -54,12 +54,13 @@
     max-width: 530px;
     max-height: 570px;
     margin: 0 auto;
+    text-align: center;
     overflow: hidden;
   }
 
   .double-img > img {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     vertical-align: middle;
   }
 

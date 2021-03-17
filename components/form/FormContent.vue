@@ -18,7 +18,7 @@
           <span>{{ subject }}</span>
         </div>
         <div>
-          <span class="guide">Guide des objets</span>
+          <span class="guide" @click="$store.dispatch('modal/toggleModal')">Guide des objets</span>
         </div>
       </div>
       <div class="subject-list">
@@ -133,6 +133,7 @@
 
   .guide {
     text-decoration: underline;
+    cursor: pointer;
   }
 
   .subject-list {

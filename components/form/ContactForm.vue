@@ -57,11 +57,11 @@
       transformSubject(subject) {
         switch (subject) {
           case "S":
-            return "Il y a de l'idée, disponible pour un appel ?"
+            return "Sympa, ça mérite un retour 📮"
           case "M":
-            return "On pourrait peut-être se laisser tenter, dites nous en plus"
+            return "Molto bene ! Tu as attisé notre curiosité 🧐"
           case "L":
-            return "On commence quand ?"
+            return "Lourd ! On commence quand 📆"
           default:
             return ""
         }

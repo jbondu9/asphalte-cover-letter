@@ -33,43 +33,50 @@
             title: "Solinum",
             details: "Assistant au chargé de développement local",
             date: "Sept. 2020 - Mars 2021",
-            place: "Bordeaux"
+            place: "Bordeaux",
+            src: "solinum.jpg"
           },
           {
             title: "Thales",
             details: "Ingénieur CIFRE",
             date: "Sept. 2019 - Juin 2020",
-            place: "Mérignac"
+            place: "Mérignac",
+            src: "thales-1.jpg"
           },
           {
             title: "ENSEIRB-MATMECA",
             details: "Chargé de TD et TP",
             date: "Sept. 2019 - Mars 2020",
-            place: "Talence"
+            place: "Talence",
+            src: "enseirb.jpg"
           },
           {
             title: "Thales",
             details: "Stagiaire en algorithmie RADAR et IA",
             date: "Fév. 2019 - Juil. 2019",
-            place: "Mérignac"
+            place: "Mérignac",
+            src: "thales-2.jpg"
           },
           {
             title: "Zodiac Data Systems",
             details: "Stagiaire en développement logiciel",
             date: "Mai 2018 - Août 2018",
-            place: "Les Ulis"
+            place: "Les Ulis",
+            src: "zodiac.jpg"
           },
           {
             title: "McDonald's",
             details: "Équipier",
             date: "Janv. 2018 - Avr. 2018",
-            place: "Montréal"
+            place: "Montréal",
+            src: "montreal.jpg"
           },
           {
             title: "Malaviya National Institute of Technology",
             details: "Assistant de recherche",
             date: "Juin 2017 - Août 2017",
-            place: "Jaipur"
+            place: "Jaipur",
+            src: "jaipur.jpg"
           }
         ],
         top: 0

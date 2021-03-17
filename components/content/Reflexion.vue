@@ -2,28 +2,26 @@
   <section class="reflexion-section">
     <div class="reflexion-box">
       <div class="reflexion-img">
-        <!-- <img :src="require({{  }})"> -->
-        <img src="https://picsum.photos/id/684/355/427">
+        <img src="https://picsum.photos/id/923/355/427">
       </div>
       <div class="reflexion-content">
         <Box>
-          <BoxTitle>All-in</BoxTitle>
+          <BoxTitle>Marin d'eau douce</BoxTitle>
           <BoxContent>
-            Pour commencer cette bonne candidature, j’ai voulu frapper fort d’entrée. Programmation sous Nuxt d’un web design que vous reconnaîtrez et phrasé qui je l’espère sera adapté, j’ai mis le paquet pour vous charmer.
+            Salut, moi c'est Jimmy, ingénieur en Télécommunications de formation, je navigue entre les projets techniques du monde de l'entreprise et ceux plus engageants de l'associatif. 
           </BoxContent>
         </Box>
       </div>
     </div>
     <div class="reflexion-box">
       <div class="reflexion-img">
-        <!-- <img :src="require({{  }})"> -->
-        <img src="https://picsum.photos/id/81/355/427">
+        <img src="https://picsum.photos/id/89/355/427">
       </div>
       <div class="reflexion-content">
         <Box>
-          <BoxTitle>De bon profil</BoxTitle>
+          <BoxTitle>What else</BoxTitle>
           <BoxContent>
-            Moins de six pieds de haut et doté d'une teinture vénitienne 100% naturelle, je suis Jimmy, ingénieur en Télécommunications diplômé de l'ENSEIRB-MATMECA depuis novembre 2019.
+            Touche à tout au premier abord, j'aime découvrir de nouvelles choses et les partager par la suite. Pour moi tout ça, c'est comme une bonne passe dé, si elle est bien ajustée, c'est toute l'équipe qui en profite.
           </BoxContent>
         </Box>
       </div>
@@ -37,7 +35,11 @@
   import BoxContent from "~/components/box/BoxContent"
 
   export default {
-    components: { Box, BoxTitle, BoxContent }
+    components: {
+      Box,
+      BoxTitle,
+      BoxContent
+    }
   }
 </script>
 
@@ -54,12 +56,13 @@
     max-width: 530px;
     max-height: 570px;
     margin: 0 auto;
+    text-align: center;
     overflow: hidden;
   }
 
   .reflexion-img > img {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     vertical-align: middle;
   }
 

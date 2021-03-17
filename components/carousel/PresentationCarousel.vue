@@ -111,7 +111,7 @@
 <style scoped>
   .presentation-carousel {
     width: 100%;
-    max-height: 800px;
+    max-height: 750px;
     overflow: hidden;
   }
 

@@ -2,8 +2,7 @@
   <section class="waterfall-section">
     <div class="waterfall-box">
       <div class="waterfall-img">
-        <!-- <img :src="require({{  }})"> -->
-        <img src="https://picsum.photos/id/781/355/427">
+        <img src="https://picsum.photos/id/946/355/427">
       </div>
       <div class="waterfall-content">
         <Box>
@@ -16,50 +15,47 @@
     </div>
     <div class="waterfall-box">
       <div class="waterfall-img">
-        <!-- <img :src="require({{  }})"> -->
-        <img src="https://picsum.photos/id/354/355/427">
+        <img src="https://picsum.photos/id/412/355/427">
       </div>
       <div class="waterfall-content">
         <Box>
           <BoxTitle>Un beau camion sur une belle route</BoxTitle>
           <BoxContent>
-            Fusce tincidunt risus risus, aliquam rhoncus risus sagittis quis. Mauris leo odio, blandit id nisl sed, iaculis cursus urna. Integer rutrum nulla id mi bibendum, non ultricies orci rhoncus. Nullam sollicitudin dui arcu.
+            D'abord lecteur d'articles sur Bonne Gueule, en me balandant un jour ici et là sur le net pour trouver de bons conseils pour refaire ma garde-robe, je suis tombé sur <a href="https://www.commeuncamion.com/2019/10/27/comment-shabiller-quand-on-est-petit-mince/" style="text-decoration: underline">cet article</a> de Comme un Camion. La révélation : un blouson épuré, solide et soigné, j'étais conquis, Asphalte venait d'entrer dans mon carnet de marques à consulter.
           </BoxContent>
         </Box>
       </div>
       <div class="waterfall-content">
         <Box>
-          <BoxTitle>Un autre titre</BoxTitle>
+          <BoxTitle>En route Marcel</BoxTitle>
           <BoxContent>
-            Fusce tincidunt risus risus, aliquam rhoncus risus sagittis quis. Mauris leo odio, blandit id nisl sed, iaculis cursus urna. Integer rutrum nulla id mi bibendum, non ultricies orci rhoncus. Nullam sollicitudin dui arcu.
-          </BoxContent>
-        </Box>
-      </div>
-    </div>
-    <div class="waterfall-box">
-      <div class="waterfall-img">
-        <!-- <img :src="require({{  }})"> -->
-        <img src="https://picsum.photos/id/16/355/427">
-      </div>
-      <div class="waterfall-content">
-        <Box>
-          <BoxTitle>Un quatrième</BoxTitle>
-          <BoxContent>
-            Integer sodales lectus lectus, in scelerisque tellus sollicitudin nec. Proin tortor ante, consequat sed leo ut, placerat malesuada enim. Aliquam sed nibh commodo diam iaculis aliquam.
+            Des mois se sont écoulés et l'idée de vouloir faire plus que porter les vêtements d'une marque que je trouve inspirante est arrivée. Je me suis dit que je voulais rejoindre l'aventure, alors j'ai utilisé mon attrait pour la Tech pour m'initier au développement front-end.
           </BoxContent>
         </Box>
       </div>
     </div>
     <div class="waterfall-box">
       <div class="waterfall-img">
-        <!-- <img :src="require({{  }})"> -->
-        <img src="https://picsum.photos/id/375/355/427">
+        <img src="https://picsum.photos/id/161/355/427">
       </div>
       <div class="waterfall-content">
         <Box>
-          <BoxTitle>Un dernier</BoxTitle>
+          <BoxTitle>Kōhai fraîche</BoxTitle>
           <BoxContent>
-            Duis vel tempor sem. Donec euismod, odio ut cursus blandit, arcu leo imperdiet erat, at semper massa orci vitae est. Cras vehicula accumsan felis.
+            Côté formation, j'ai mis la data de côté pour me tourner vers le monde du web. De fait, depuis le début de mon service civique, je développe mes connaisssances en front avec la crème de la crème : Mathieu Nebra (Openclassrooms), Jonathan Boyer (Grafikart) et Benjamin Debon (Benjamin Code) sont mes senseis. 
+          </BoxContent>
+        </Box>
+      </div>
+    </div>
+    <div class="waterfall-box">
+      <div class="waterfall-img">
+        <img src="https://picsum.photos/id/370/355/427">
+      </div>
+      <div class="waterfall-content">
+        <Box>
+          <BoxTitle>Viser la lune</BoxTitle>
+          <BoxContent>
+            En rejoignant Asphalte, je souhaite donc prendre part à un projet auquel j'adhère déjà, mais pas seulement. En effet, je viens de découvrir l'univers du dévelopement front et son côté créatif me plaît beaucoup. J'espère donc pouvoir continuer à faire mes gammes en contribuant à la vision d'Asphalte.
           </BoxContent>
         </Box>
       </div>
@@ -90,12 +86,13 @@
     max-width: 530px;
     max-height: 570px;
     margin: 0 auto;
+    text-align: center;
     overflow: hidden;
   }
 
   .waterfall-img > img {
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     vertical-align: middle;
   }
 
@@ -131,11 +128,12 @@
     }
 
     .waterfall-box:nth-of-type(3) {
+      align-items: flex-start;
       margin-top: 40px;
     }
 
     .waterfall-box:nth-of-type(4) {
-      margin-top: -240px;
+      margin-top: -200px;
     }
 
     .waterfall-img {
@@ -177,7 +175,7 @@
       top: 90px;
       right: 0;
       min-width: 595px;
-      height: 280px;
+      min-height: 280px;
     }
 
     .waterfall-box:nth-of-type(2) > .waterfall-content:last-of-type {
@@ -188,7 +186,6 @@
 
     .waterfall-box:nth-of-type(3) > .waterfall-content {
       width: 530px;
-      max-height: 290px;
     }
 
     .waterfall-box:nth-of-type(4) > .waterfall-content {

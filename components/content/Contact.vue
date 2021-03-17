@@ -14,8 +14,8 @@
     align-items: center;
     width: 100%;
     height: 280px;
-    margin: 22px 0 0;
-    background: center / cover url("https://picsum.photos/id/74/355/427");
+    margin: 30px 0 0;
+    background: center / cover url("~assets/images/contact.jpg");
   }
 
   .contact-btn {
@@ -47,7 +47,8 @@
 
   @media only screen and (min-width: 768px) {
     .contact-btn-section {
-      margin-top: 30px;
+      margin-top: 45px;
+      background: center / cover url("~assets/images/contact.jpg");
     }
 
     .contact-btn > span {
@@ -57,7 +58,7 @@
 
   @media only screen and (min-width: 1125px) {
     .contact-btn-section {
-      margin-top: 40px;
+      margin-top: 60px;
       height: 470px;
     }
 
