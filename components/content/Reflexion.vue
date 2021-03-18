@@ -21,7 +21,7 @@
         <Box>
           <BoxTitle>What else</BoxTitle>
           <BoxContent>
-            Touche à tout au premier abord, j'aime découvrir de nouvelles choses et les partager par la suite. Pour moi tout ça, c'est comme une bonne passe dé, si elle est bien ajustée, c'est toute l'équipe qui en profite.
+            Touche à tout au premier abord, j'aime découvrir de nouvelles choses et les partager par la suite. Pour moi, tout ça c'est comme une bonne passe dé, si elle est bien ajustée, c'est toute l'équipe qui en profite.
           </BoxContent>
         </Box>
       </div>

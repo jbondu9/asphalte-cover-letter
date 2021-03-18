@@ -1,7 +1,7 @@
 <template>
   <section class="issues-section">
     <p class="issues-intro">
-      En me retrouvant de nouveau sur le marché de l'emploi, il y a deux choses sur lesquelles j'étais sûr de me pencher : mon CV et ma lettre de motivation. Alors, afin de ne pas reproduire d'anciennes erreurs et de sortir des sentiers battus, je me suis replongé sur des candidatures passées tout en prenant note des différents retours que j'avais eus.
+      En me retrouvant de nouveau sur le marché de l'emploi, il y a deux choses sur lesquelles j'étais sûr de plancher : mon CV et ma lettre de motivation. Alors, afin de ne pas reproduire d'anciennes erreurs et de sortir des sentiers battus, je me suis replongé sur des candidatures passées tout en prenant note des différents retours que j'avais eus.
       <span>Et voici les quatre grands points que j’en ai tirés :</span>
     </p>
     <div class="issues-items">

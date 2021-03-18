@@ -8,7 +8,7 @@
         <Box>
           <BoxTitle>Pourquoi Asphalte</BoxTitle>
           <BoxContent>
-            Bien que je passe rarement plus 15 minutes devant mes fringues à me demander comment je vais pouvoir les accorder, j'aime porter de beaux vêtements. Encore mieux quand ils sont confortables, bien coupés et qu'ils durent dans le temps. Et oui, étant quelque peu minimaliste et pas très grand, j'ai commencé, il y a peu, à vouloir consommer du vêtement autrement.
+            Bien que je passe rarement plus de 15 minutes devant mes fringues à me demander comment je vais pouvoir les accorder, j'aime porter de beaux vêtements. Encore mieux quand ils sont confortables, bien coupés et qu'ils durent dans le temps. Et oui, étant quelque peu minimaliste et pas très grand, j'ai commencé, il y a peu, à vouloir consommer du vêtement autrement.
           </BoxContent>
         </Box>
       </div>

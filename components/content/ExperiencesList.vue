@@ -2,8 +2,7 @@
   <div class="experiences-list">
     <div v-for="(experience, i) in experiences" :key="i" class="experience-card">
       <div class="experience-glyph">
-        <img :src="`https://picsum.photos/id/${Math.floor(Math.random() * (54 + i))}/355/427`">
-        <!-- <img :src="require(`~/assets/images/${experience.src}`)"> -->
+        <img :src="require(`~/assets/images/${experience.src}`)">
         <div class="experience-date">
           {{ experience.date }}
         </div>
@@ -73,8 +72,8 @@
   }
 
   .experience-glyph > img {
-    /* width: 100%;
-    height: auto; */
+    width: auto;
+    height: 100%;
     max-height: 380px;
     vertical-align: middle;
     transition: all .25s ease;
@@ -120,6 +119,21 @@
     height: 2px;
     margin: 4px 8px;
     background-color: #000;
+  }
+
+  .experience-card:nth-of-type(2) img {
+    position: relative;
+    left: -30%;
+  }
+
+  .experience-card:nth-of-type(4) img {
+    position: relative;
+    left: -20%;
+  }
+
+  .experience-card:nth-of-type(5) img {
+    position: relative;
+    left: -30%;
   }
 
   @media only screen and (min-width: 721px) {

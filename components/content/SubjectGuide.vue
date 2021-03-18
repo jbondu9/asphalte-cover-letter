@@ -38,7 +38,7 @@
                 </tr>
                 <tr>
                   <td>Retour du type</td>
-                  <td>Nous n'avons pas d'offres ou de disponibilités pour le moment, mais nous saluons ton travail.</td>
+                  <td>Nous n'avons pas d'offres présentement, mais nous saluons ton travail.</td>
                   <td>Candidature intéressante, des disponibilités pour un premier échange ?</td>
                   <td>Ton profil nous intéresse, quand serais-tu disponible pour commencer ?</td>
                 </tr>
