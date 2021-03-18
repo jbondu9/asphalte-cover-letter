@@ -2,20 +2,20 @@
   <section class="reflexion-section">
     <div class="reflexion-box">
       <div class="reflexion-img">
-        <img src="https://picsum.photos/id/923/355/427">
+        <img src="~/assets/images/sailor.jpg">
       </div>
       <div class="reflexion-content">
         <Box>
           <BoxTitle>Marin d'eau douce</BoxTitle>
           <BoxContent>
-            Salut, moi c'est Jimmy, ingénieur en Télécommunications de formation, je navigue entre les projets techniques du monde de l'entreprise et ceux plus engageants de l'associatif. 
+            Salut, moi c'est Jimmy, ingénieur en Télécommunications. Je navigue entre les projets techniques du monde de l'entreprise et ceux plus engageants de l'associatif. 
           </BoxContent>
         </Box>
       </div>
     </div>
     <div class="reflexion-box">
       <div class="reflexion-img">
-        <img src="https://picsum.photos/id/89/355/427">
+        <img src="~/assets/images/soccer.jpg">
       </div>
       <div class="reflexion-content">
         <Box>
@@ -56,19 +56,32 @@
     max-width: 530px;
     max-height: 570px;
     margin: 0 auto;
-    text-align: center;
     overflow: hidden;
   }
 
   .reflexion-img > img {
-    /* width: 100%;
-    height: 100%; */
+    width: auto;
+    height: 100%;
     vertical-align: middle;
   }
 
   .reflexion-content {
     max-width: 530px;
     margin: 0 auto;
+  }
+
+  @media only screen and (max-width: 420px) {
+    .reflexion-box:last-of-type img {
+      position: relative;
+      left: -60%;
+    }
+  }
+
+  @media only screen and (max-width: 444px) {
+    .reflexion-box:first-of-type img {
+      position: relative;
+      left: -50%;
+    }
   }
 
   @media only screen and (min-width: 768px) {

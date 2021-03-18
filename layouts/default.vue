@@ -2,6 +2,7 @@
   <div class="site-container" :class="{'drawer-active': isDrawer}">
 
     <Drawer />
+    <SubjectGuide />
     
     <div class="site-content" :class="{'drawer-active': isDrawer}">
       <div v-if="isDrawer" class="backdrop" @click="$store.dispatch('nav/toggleDrawer')"></div>
@@ -14,7 +15,10 @@
 </template>
 
 <script>
+  import SubjectGuide from "~/components/content/SubjectGuide"
+  
   export default {
+    components: { SubjectGuide },
 
     created() {
       if (process.client) {
@@ -128,5 +132,10 @@
     left: 0;
     bottom: 0;
     z-index: 1000;
+  }
+
+  .overflow-hidden {
+    height: 100vh;
+    overflow: hidden;
   }
 </style>

@@ -1,7 +1,6 @@
 <template>
   <div class="application-container">
     <ShortPresentation />
-    <SubjectGuide />
     <Title>
       Rock - Cover - Letter
     </Title>
@@ -27,7 +26,6 @@
   import Waterfall from "~/components/content/Waterfall"
   import Double from "~/components/content/Double"
   import Contact from "~/components/content/Contact"
-  import SubjectGuide from "~/components/content/SubjectGuide"
 
   export default {
     components: {
@@ -37,8 +35,7 @@
       Reflexion,
       Waterfall,
       Double,
-      Contact,
-      SubjectGuide
+      Contact
     }
   }
 </script>

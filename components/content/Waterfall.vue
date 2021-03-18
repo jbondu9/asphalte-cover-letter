@@ -2,7 +2,7 @@
   <section class="waterfall-section">
     <div class="waterfall-box">
       <div class="waterfall-img">
-        <img src="https://picsum.photos/id/946/355/427">
+        <img src="~/assets/images/shirt.jpg">
       </div>
       <div class="waterfall-content">
         <Box>
@@ -15,7 +15,7 @@
     </div>
     <div class="waterfall-box">
       <div class="waterfall-img">
-        <img src="https://picsum.photos/id/412/355/427">
+        <img src="~/assets/images/road.jpg">
       </div>
       <div class="waterfall-content">
         <Box>
@@ -36,26 +36,26 @@
     </div>
     <div class="waterfall-box">
       <div class="waterfall-img">
-        <img src="https://picsum.photos/id/161/355/427">
+        <img src="~/assets/images/kohai.jpg">
       </div>
       <div class="waterfall-content">
         <Box>
           <BoxTitle>Kōhai fraîche</BoxTitle>
           <BoxContent>
-            Côté formation, j'ai mis la data de côté pour me tourner vers le monde du web. De fait, depuis le début de mon service civique, je développe mes connaisssances en front avec la crème de la crème : Mathieu Nebra (Openclassrooms), Jonathan Boyer (Grafikart) et Benjamin Debon (Benjamin Code) sont mes senseis. 
+            Côté formation, j'ai mis la data un peu de côté pour me tourner vers le monde du web. De fait, depuis le début de mon service civique, je développe mes connaisssances en front avec la crème de la crème : Mathieu Nebra (Openclassrooms), Jonathan Boyer (Grafikart) et Benjamin Debon (Benjamin Code) sont mes senseis. 
           </BoxContent>
         </Box>
       </div>
     </div>
     <div class="waterfall-box">
       <div class="waterfall-img">
-        <img src="https://picsum.photos/id/370/355/427">
+        <img src="~/assets/images/moon.jpg">
       </div>
       <div class="waterfall-content">
         <Box>
           <BoxTitle>Viser la lune</BoxTitle>
           <BoxContent>
-            En rejoignant Asphalte, je souhaite donc prendre part à un projet auquel j'adhère déjà, mais pas seulement. En effet, je viens de découvrir l'univers du dévelopement front et son côté créatif me plaît beaucoup. J'espère donc pouvoir continuer à faire mes gammes en contribuant à la vision d'Asphalte.
+            En rejoignant Asphalte, je souhaite donc prendre part à un projet auquel j'adhère déjà complètement. Fini la fast-fashion et oui à une sappe qui dure et fait attention à son environnement. Mais ce n'est pas tout. En effet, je viens de découvrir l'univers du dévelopement front et son côté créatif me plaît beaucoup. Alors, j'espère pouvoir continuer à faire mes gammes tout en contribuant à l'essor d'Asphalte.
           </BoxContent>
         </Box>
       </div>
@@ -86,13 +86,12 @@
     max-width: 530px;
     max-height: 570px;
     margin: 0 auto;
-    text-align: center;
     overflow: hidden;
   }
 
   .waterfall-img > img {
-    /* width: 100%;
-    height: 100%; */
+    width: 100%;
+    height: auto;
     vertical-align: middle;
   }
 
@@ -129,7 +128,7 @@
 
     .waterfall-box:nth-of-type(3) {
       align-items: flex-start;
-      margin-top: 40px;
+      margin-top: -30px;
     }
 
     .waterfall-box:nth-of-type(4) {
@@ -143,6 +142,11 @@
     .waterfall-box:first-of-type > .waterfall-img {
       width: 465px;
       height: 400px;
+    }
+
+    .waterfall-box:first-of-type img {
+      position: relative;
+      top: -20%;
     }
 
     .waterfall-box:nth-of-type(2) > .waterfall-img {
@@ -161,6 +165,11 @@
       min-height: 615px;
     }
 
+    .waterfall-box:nth-of-type(4) img {
+      position: relative;
+      top: -7%;
+    }
+
     .waterfall-content {
       margin: 0;
     }
@@ -172,14 +181,14 @@
 
     .waterfall-box:nth-of-type(2) > .waterfall-content {
       position: absolute;
-      top: 90px;
+      top: 60px;
       right: 0;
       min-width: 595px;
       min-height: 280px;
     }
 
     .waterfall-box:nth-of-type(2) > .waterfall-content:last-of-type {
-      bottom: 60px;
+      bottom: 120px;
       top: auto;
       min-width: 690px;
     }
@@ -193,7 +202,7 @@
       bottom: 0;
       right: 0;
       width: 530px;
-      height: 375px;
+      height: 390px;
     }
   }
 </style>

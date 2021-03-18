@@ -3,7 +3,7 @@
     <div class="shipping">Prise de poste estimée : À partir du {{ availabilityDate.toLocaleDateString("fr", {month: "long", day: "numeric"}) }}</div>
     <div class="remaining-days">
       <div class="days">{{ daysLeft() }} jours</div>
-      <div class="info">restant avant d'être disponible</div>
+      <div class="info">restants avant d'être disponible</div>
     </div>
   </div>
 </template>

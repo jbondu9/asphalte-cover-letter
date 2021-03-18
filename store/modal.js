@@ -4,6 +4,12 @@ export const state = () => ({
 
 export const mutations = {
   TOGGLE_MODAL(state) {
+    if (state.toggleModal) {
+      document.querySelector(".site-container").classList.remove("overflow-hidden");
+    }
+    else {
+      document.querySelector(".site-container").classList.add("overflow-hidden");
+    } 
     state.toggleModal = !state.toggleModal
   }
 }

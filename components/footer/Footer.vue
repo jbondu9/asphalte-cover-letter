@@ -150,6 +150,7 @@
     font-family: "Qanelas-ExtraBold", sans-serif;
     font-weight: 800;
     text-transform: uppercase;
+    letter-spacing: 2px;
     color: transparent;
     background-image: url("~assets/textures/concrete.jpg");
     background-size: contain;

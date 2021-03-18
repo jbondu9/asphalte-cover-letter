@@ -2,28 +2,26 @@
   <section class="double-section">
     <div class="double-box">
       <div class="double-img">
-        <!-- <img :src="require({{  }})"> -->
-        <img src="https://picsum.photos/id/221/355/427">
+        <img src="~/assets/images/handstand.jpg">
       </div>
       <div class="double-content">
         <Box>
           <BoxTitle>Front-end flip</BoxTitle>
           <BoxContent>
-            Agile comme un félin grâce à mes nombreuses années de gymnastique, je profite de celles-ci pour apprendre de nouvelles technos comme si elles étaient des saltos. HTML, CSS, SASS, Javascript, React, Vue et Nuxt sont les cordes qui commencent à venir s'accrocher à mon arc.
+            Agile comme un félin grâce à mes nombreuses années de gymnastique, je profite de celles-ci pour apprendre de nouvelles technos comme si elles étaient des acrobaties. Ainsi, en plus des basiques HTML, CSS et Javascript, SASS, React ou encore Nuxt sont les cordes qui viennent s'accrocher à mon arc.
           </BoxContent>
         </Box>
       </div>
     </div>
     <div class="double-box">
       <div class="double-img">
-        <!-- <img :src="require({{  }})"> -->
-        <img src="https://picsum.photos/id/19/355/427">
+        <img src="~/assets/images/poutine.jpg">
       </div>
       <div class="double-content">
         <Box>
           <BoxTitle>Poutine au curry</BoxTitle>
           <BoxContent>
-            Enfin pour m'enrichir professionnellement et personnellement, j'ai profité de mes années en école d'ingénieurs pour parcourir quelques kilomètres : de l'Inde au Canada en passant par l'Irlande, ces voyages m'ont beaucoup apporté.
+            Enfin pour m'enrichir professionnellement et personnellement, j'ai profité de mes années en école d'ingénieurs pour parcourir quelques kilomètres. De l'Inde au Canada en passant par l'Irlande, j'ai pu découvrir des cultures variées et en apprendre plus sur moi-même.
           </BoxContent>
         </Box>
       </div>
@@ -54,13 +52,12 @@
     max-width: 530px;
     max-height: 570px;
     margin: 0 auto;
-    text-align: center;
     overflow: hidden;
   }
 
   .double-img > img {
-    /* width: 100%;
-    height: 100%; */
+    width: 100%;
+    height: auto;
     vertical-align: middle;
   }
 
@@ -69,9 +66,21 @@
     margin: 0 auto;
   }
 
+  @media only screen and (min-width: 515px) {
+    .double-box:first-of-type img {
+      position: relative;
+      top: -27%;
+    }
+  }
+
   @media only screen and (min-width: 768px) {
     .double-section {
       margin: 30px 12.5px 0;
+    }
+
+    .double-box:first-of-type img {
+      position: relative;
+      top: -40%;
     }
   }
 
@@ -102,9 +111,18 @@
       height: 400px;
     }
 
+    .double-box:first-of-type img {
+      top: -60%;
+    }
+
     .double-box:last-of-type > .double-img {
       width: 520px;
       height: 390px;
+    }
+
+    .double-box:last-of-type img {
+      position: relative;
+      top: -30%;
     }
 
     .double-content {
