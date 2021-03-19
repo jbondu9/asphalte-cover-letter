@@ -55,7 +55,7 @@
         <Box>
           <BoxTitle>Viser la lune</BoxTitle>
           <BoxContent>
-            En rejoignant Asphalte, je souhaite donc prendre part à un projet auquel j'adhère déjà complètement. Fini la fast-fashion et oui à une sappe qui dure et fait attention à son environnement. Mais ce n'est pas tout. En effet, je viens de découvrir l'univers du dévelopement front et son côté créatif me plaît beaucoup. Alors, j'espère pouvoir continuer à faire mes gammes tout en contribuant à l'essor d'Asphalte.
+            En rejoignant Asphalte, je souhaite donc prendre part à un projet auquel j'adhère déjà complètement. Fini la fast-fashion et oui à une sape qui dure et fait attention à son environnement. Mais ce n'est pas tout. En effet, je viens de découvrir l'univers du dévelopement front et son côté créatif me plaît beaucoup. Alors, j'espère pouvoir continuer à faire mes gammes tout en contribuant à l'essor d'Asphalte.
           </BoxContent>
         </Box>
       </div>
