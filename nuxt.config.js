@@ -21,5 +21,9 @@ export default {
     {
       path: "~/components/footer/"
     }
-  ]
+  ],
+  target: "static",
+  router: {
+    base: "/asphalte-cover-letter/"
+  }
 }

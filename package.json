@@ -8,5 +8,8 @@
   },
   "dependencies": {
     "nuxt": "^2.14.12"
+  },
+  "devDependencies": {
+    "push-dir": "^0.4.1"
   }
 }

@@ -38,7 +38,7 @@
                 </tr>
                 <tr>
                   <td>Retour du type</td>
-                  <td>Nous n'avons pas d'offres présentement, mais nous saluons ton travail.</td>
+                  <td>Nous n'avons pas d'offre présentement, mais nous saluons ton travail.</td>
                   <td>Candidature intéressante, des disponibilités pour un premier échange ?</td>
                   <td>Ton profil nous intéresse, quand serais-tu disponible pour commencer ?</td>
                 </tr>
@@ -107,6 +107,7 @@
     flex-flow: column;
     width: 800px;
     max-width: 100vw;
+    height: 100%;
     padding: 40px 24px;
     margin: 0 auto;
     background-color: #fff;
